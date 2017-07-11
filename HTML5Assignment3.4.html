@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+	 Create a student Signup form and add background images to it.
+	The Submit button should be transparent.
+	 Use the required attribute, maxlength, enabled, disabled. max and min attribute of form.
+	-->
+	<title>HTML5 Assignment3.4</title>
+	<style type="text/css">
+		body{
+			background-image: url("BackgroundStudent.jpg");
+		}
+		label{
+			color: Black;
+			font-weight: bold;
+			float: left;
+			width: 200px;
+			margin-right: 5px;
+		}
+		h1{}
+		.alignCenter{
+			margin-left: 30px;
+			text-decoration: underline;
+		}
+		.button{
+			background-color: transparent;
+			margin-left: 100px;
+		}	
+		#mainDiv{
+			position: absolute;
+			left: 35%;
+			right: 0;
+		}
+		input{
+			margin-bottom: 5px;
+		}
+		input[type=text]:enabled {
+			background-color: green;
+			color: white;
+		}
+		input[type=number]:enabled {
+			background-color: green;
+			color: white;
+		}
+		input[type=text]:disabled {
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div id="mainDiv">
+			<h1 class="alignCenter">Student Registration Form</h1>
+			<form action="HTML5Assignment3.4.html" method="get" >
+				<label>First Name:</label>
+				<input type="text" required name="fName" maxlength="10" ><br>
+				<label>Last Name:</label>
+				<input type="text" name="lName" maxlength="10"><br>
+				<label>Age(In Years):</label>
+				<input type="number" required name="age" min="15" max="40"><br>
+				<label>Contact(mobile: +91):</label>
+				<input type="text" required name="contact" maxlength="10" minlength="10"><br>
+				<label>Course:</label>
+				<input type="text" required name="course" disabled="disabled"><br>
+				<input type="submit" class="button" name="submit" value="Submit Details" >
+			</form>
+		</div>	
+	</section>	
+</body>
+</html>
